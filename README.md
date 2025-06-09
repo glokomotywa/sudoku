@@ -1,5 +1,5 @@
 ### Jakub Woś 288581 Informatyka Ogólnoakademicka
-# Dokumentacja: Gra Sudoku
+# Dokumentacja: Sudoku
 ## Opis ogólny
 
 Gra Sudoku to implementacja popularnej łamigłówki liczbowej napisana w Pythonie z wykorzystaniem biblioteki Pygame. Program oferuje pełną funkcjonalność gry, w tym generowanie plansz o różnych poziomach trudności, zapisywanie i wczytywanie postępu, system wskazówek oraz mechanizm śledzenia czasu gry.
