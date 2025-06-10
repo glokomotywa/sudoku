@@ -513,28 +513,6 @@ class Game:
             self.hint_count -= 1
             self.hint_button.text = f"Wskazówka ({self.hint_count})"  # Aktualizacja tekstu przycisku
 
-    def is_valid(self, row, col, num):
-        # Sprawdź wiersz
-        for c in range(GRID_SIZE):
-            if c != col and self.board[row][c] == num:
-                return False
-
-        # Sprawdź kolumnę
-        for r in range(GRID_SIZE):
-            if r != row and self.board[r][col] == num:
-                return False
-
-        # Sprawdź kwadrat 3x3
-        start_row, start_col = 3 * (row // 3), 3 * (col // 3)
-        for r in range(3):
-            for c in range(3):
-                cell_row = start_row + r
-                cell_col = start_col + c
-                if (cell_row != row or cell_col != col) and self.board[cell_row][cell_col] == num:
-                    return False
-
-        return True
-
     def handle_events(self):
         mouse_pos = pygame.mouse.get_pos()
 
